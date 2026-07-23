@@ -1,0 +1,9 @@
+#https://myaccount.google.com/apppasswords
+
+spring.application.name=C95_SendEmail_SpringBoot
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=ajaynikam7218@gmail.com
+spring.mail.password=mlku qxeu tybd udad
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true

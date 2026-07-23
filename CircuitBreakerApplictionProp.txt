@@ -1,0 +1,16 @@
+
+# Circuit Breaker (Resilience4j)
+resilience4j.circuitbreaker.instances.userServiceCB.registerHealthIndicator=true
+resilience4j.circuitbreaker.instances.userServiceCB.slidingWindowType=COUNT_BASED
+resilience4j.circuitbreaker.instances.userServiceCB.slidingWindowSize=10
+resilience4j.circuitbreaker.instances.userServiceCB.minimumNumberOfCalls=5
+resilience4j.circuitbreaker.instances.userServiceCB.failureRateThreshold=50
+resilience4j.circuitbreaker.instances.userServiceCB.waitDurationInOpenState=10s
+resilience4j.circuitbreaker.instances.userServiceCB.permittedNumberOfCallsInHalfOpenState=3
+
+# Timeout
+resilience4j.timelimiter.instances.userServiceCB.timeoutDuration=3s
+
+# Retry (optional but common)
+resilience4j.retry.instances.userServiceCB.maxAttempts=3
+resilience4j.retry.instances.userServiceCB.waitDuration=2s
